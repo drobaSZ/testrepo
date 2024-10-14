@@ -1,0 +1,505 @@
+    1  ssh-keygen -t rsa -b 4096 -C "droba_sz25@student.itstep.org"
+    2  cat ~/.ssh/id_rsa.pub
+    3  ssh -T git@github.com
+    4  ls
+    5  cd ..
+    6  ls
+    7  cd devasc/
+    8  ls
+    9  git config --global user.name "drobaSZ"
+   10  git config --global user.email "droba_sz25@student.itstep.org"
+   11  git config --list
+   12  cd labs/devnet-src/
+   13  mkdir git-intro
+   14  cd git-intro/
+   15  git init
+   16  ls -a
+   17  git status
+   18  echo "I am on way" > DEVASC.txt
+   19  cat DEVASC.txt 
+   20  git status
+   21  git add DEVASC.txt 
+   22  git status
+   23  git commit -m "Committing DEVASC.txt to begin tracking chanches"
+   24  git log
+   25  ls
+   26  echo "I am beggining to undestend Git" >> DEVASC.txt 
+   27  cat DEVASC.txt 
+   28  git status
+   29  git add DEVASC.txt 
+   30  git commit -m "Added additional line to file"
+   31  git log
+   32  git branch feature
+   33  git branch
+   34  git checkout feature
+   35  git branch
+   36  echo "This is new add" >> DEVASC.txt 
+   37  cat DEVASC.txt 
+   38  git add DEVASC.txt 
+   39  git status
+   40  git commit -m "Added a third line in feature branch"
+   41  git log
+   42  git checkout master
+   43  git branch
+   44  git merge feature
+   45  cat DEVASC.txt 
+   46  git branch
+   47  git branch -d feature
+   48  git branch
+   49  git branch test
+   50  git branch 
+   51  git checkout test
+   52  git branch
+   53  nano DEVASC.txt 
+   54  cat DEVASC.txt 
+   55  sed -i 's/beggining/Git' DEVASC.txt 
+   56  sed -i `s/beggining/Git` DEVASC.txt 
+   57  cat DEVASC.txt 
+   58  sed -i 's/beggining/Git' DEVASC.txt 
+   59  cat DEVASC.txt 
+   60  sed -i s/beggining/Git DEVASC.txt 
+   61  sed -i 's/beggining/Git/' DEVASC.txt 
+   62  cat DEVASC.txt 
+   63  git commit -a -m "Change beggining to Git"
+   64  git checkout master
+   65  git branch
+   66  cat DEVASC.txt 
+   67  git branch
+   68  sed -i 's/begginnig/Git/' DEVASC.txt 
+   69  cat D
+   70  cat DEVASC.txt 
+   71  sed -i 's/begginig/Git/' DEVASC.txt 
+   72  cat DEVASC.txt 
+   73  sed -i 's/begginig/Git/' DEVASC.txt 
+   74  cat DEVASC.txt 
+   75  sed -i 's/beggining/Git/' DEVASC.txt 
+   76  cat DEVASC.txt 
+   77  git commit -a
+   78  git commit -a -m "Change beggining to Git"
+   79  git merge test
+   80  git log
+   81  mkdir devasc-study-team
+   82  cd devasc-study-team/
+   83  cp ../DEVASC.txt 
+   84  ls
+   85  cd //
+   86  cd /home/devasc/labs/devnet-src/git-intro/
+   87  ls
+   88  cp DEVASC.txt devasc-study-team/
+   89  cp DEVASC.txt devasc-study-team/DEVASC.txt
+   90  cd devasc-study-team/
+   91  ls
+   92  cat DEVASC.txt 
+   93  git init
+   94  git config --list
+   95  git remote add origin https://github.com/drobaSZ/devasc-study-team.git
+   96  git remote --verbose
+   97  git log
+   98  git add DEVASC.txt 
+   99  git commit -m "Add DEVASC.txt file to devasc-study-team"
+  100  git log
+  101  git status
+  102  git push origin master
+  103  git remote rm origin
+  104  git remote add origin https://github.com/drobaSZ/Devasc-study-team
+  105  git push origin master
+  106  git remote rm origin
+  107  git remote add origin https://github.com/drobaSZ/Devasc-study-team.git
+  108  git push origin master
+  109  git remote rm origin
+  110  git remote add origin https://github.com/drobaSZ/Devasc-study-team.git
+  111  git push origin master
+  112  kl63%%YnjRkl63%%YnjR
+  113  git push origin master
+  114  git remote rm origin
+  115  git remote add origin git@github.com:drobaSZ/Devasc-study-team.git
+  116  exit
+  117  apt-get instal openssh-server
+  118  apt-get install openssh-server
+  119  systemctl enable ssh
+  120  systemctl status ssh
+  121  ip a
+  122  ssh version
+  123  apt install openssh-client
+  124  systemctl enable ssh
+  125  systemctl status ssh
+  126  apt update && apt upgrade -y
+  127  systemctl restart ssh
+  128  systemctl enadle ssh
+  129  systemctl enedle ssh
+  130  systemctl enable ssh
+  131  systemctl status ssh
+  132  ip a
+  133  systemctl status ssh
+  134  pwd
+  135  cd ..
+  136  tree
+  137  apt install tree
+  138  tree
+  139  man tree
+  140  man tree>tree.txt
+  141  ls
+  142  cat tree.txt 
+  143  clear
+  144  ls
+  145  cd student/
+  146  ls
+  147  pwd
+  148  cd ..
+  149  ls
+  150  pwd
+  151  cd home/
+  152  ls
+  153  cd devasc/
+  154  ls
+  155  cd labs/devnet-src/python/
+  156  nano myCity.py
+  157  python3 myCity.py 
+  158  nano myLocation.py
+  159  python3 myLocation.py 
+  160  nano myLocation.py
+  161  python3 myLocation.py 
+  162  nano myLocation.py
+  163  python3 myLocation.py 
+  164  nano myLocation.py
+  165  python3 myLocation.py 
+  166  nano myLocation.py
+  167  python3 myLocation.py 
+  168  nano myLocation.py
+  169  python3 myLocation.py 
+  170  cat myLocation.py 
+  171  python3 -m unittest -h
+  172  cd ..
+  173  ls
+  174  cd unittest/
+  175  ls
+  176  cat test_data.py 
+  177  more unittest/test_data.py
+  178  more unittest/test_data.pycd ..
+  179  cd ..
+  180  more unittest/test_data.py
+  181  cd unittest/
+  182  ls
+  183  nano recursive_json_search.py 
+  184  python3 recursive_json_search.py 
+  185  nano recursive_json_search.py 
+  186  python3 recursive_json_search.py 
+  187  nano recursive_json_search.py 
+  188  python3 recursive_json_search.py 
+  189  nano recursive_json_search.py 
+  190  python3 recursive_json_search.py 
+  191  nano recursive_json_search.py 
+  192  python3 recursive_json_search.py 
+  193  nano recursive_json_search.py 
+  194  python3 recursive_json_search.py 
+  195  nano recursive_json_search.py 
+  196  python3 recursive_json_search.py 
+  197  nano recursive_json_search.py 
+  198  python3 recursive_json_search.py 
+  199  ls
+  200  nano test_jason.py
+  201  nano test_json_search.py 
+  202  python3 test_json_search.py 
+  203  python3 -m unittest -v test_json_search
+  204  ls
+  205  nano recursive_json_search.py 
+  206  python3 recursive_json_search.py 
+  207  nano recursive_json_search.py 
+  208  python3 recursive_json_search.py 
+  209  nano recursive_json_search.py 
+  210  python3 recursive_json_search.py 
+  211  nano recursive_json_search.py 
+  212  python3 recursive_json_search.py 
+  213  nano recursive_json_search.py 
+  214  python3 recursive_json_search.py 
+  215  cat recursive_json_search.py 
+  216  cd /home/devasc/labs/devnet-src/
+  217  cd parsing/
+  218  ls
+  219  ll
+  220  cat myfile.xml 
+  221  nano parsexml.py 
+  222  python3 parsexml.py 
+  223  ls
+  224  nano parseyaml.py 
+  225  python3 parseyaml.py 
+  226  nano parseyaml.py 
+  227  python3 parseyaml.py 
+  228  ls
+  229  nano parsejson.py 
+  230  python3 parsejson.py 
+  231  nano parsejson.py 
+  232  python3 parseyaml.py 
+  233  nano parseyaml.py 
+  234  python parseyaml.py 
+  235  python3 parseyaml.py 
+  236  ls
+  237  nano parsey
+  238  ls
+  239  nano parseyaml.py 
+  240  cp parseyaml.py parseyaml2.py 
+  241  nano parseyaml2.py 
+  242  python3 parseyaml2.py 
+  243  clear
+  244  ssh -T git@github.com
+  245  ssh-keygen -t rsa -b 4096 -C "droba_sz25@student.itstep.org"
+  246  ssh -T git@github.com
+  247  ssh-keygen -t rsa -b 4096 -C "droba_sz25@student.itstep.org"
+  248  cat ~/.ssh/id_rsa.pub
+  249  ssh -T git@github.com
+  250  git config --list
+  251  cd ..
+  252  ls
+  253  git clone https://https://github.com/drobaSZ/weather-station.git
+  254  git clone https://github.com/drobaSZ/weather-station.git
+  255  ls
+  256  cd weather-station/
+  257  ls
+  258  touch sensor.py
+  259  touch server.py
+  260  mkdir templates
+  261  cd
+  262  cd /home/devasc/weather-station/templates/
+  263  touch index.html
+  264  cd ..
+  265  nano server.py 
+  266  cd templates/
+  267  nano index.html 
+  268  cd ..
+  269  ls
+  270  nano sensor.py 
+  271  ls
+  272  apt install python3 pithon-pip -y
+  273  apt install python3 python3-pip -y
+  274  apt insstall python3-venv -y
+  275  apt install python3-venv -y
+  276  sudo gpkg --configure -a
+  277  sudo dpkg --configure -a
+  278  ls
+  279  apt inastall python3-venv -y
+  280  apt install python3-venv -y
+  281  python3-m venv venv
+  282  python3 -m venv venv
+  283  source venv/bin/activate
+  284  pip install flask
+  285  pip show flask
+  286  apt install python3 python3-pip -y
+  287  python3 sever.py
+  288  ls
+  289  python3 server.py
+  290  nano server.py 
+  291  python3 server.py
+  292  nano server.py 
+  293  python3 server.py
+  294  cat server.py 
+  295  nano server.py 
+  296  python3 server.py
+  297  python3 server.py
+  298  ll
+  299  ls
+  300  cd ..
+  301  ls
+  302  cd student/
+  303  ls
+  304  git@github.com:m-sekret/MB311-Exchange.git
+  305  git clonegit@github.com:m-sekret/MB311-Exchange.git
+  306  git clone git@github.com:m-sekret/MB311-Exchange.git
+  307  ls
+  308  cd MB311-Exchange/
+  309  ls
+  310  git config --list
+  311  ls
+  312  cat Info_Project 
+  313  ls
+  314  nano sensor_Actions.py
+  315  ls
+  316  cat sensor_Actions.py 
+  317  nano sensor_Actions.py 
+  318  git add sensor_Actions.py 
+  319  git status
+  320  git log
+  321  git status
+  322  cd ..
+  323  lss
+  324  ls
+  325  cd devasc/
+  326  ls
+  327  cd weather-station/
+  328  ls
+  329  cd ..
+  330  ls
+  331  cd /home
+  332  ls
+  333  cd devasc/
+  334  ls
+  335  cd ..
+  336  ls
+  337  cd student/
+  338  ls
+  339  cd MB311-Exchange/
+  340  ls
+  341  git add sensor_Actions.py 
+  342  git commit -m "sensor akciy Drobaha"
+  343  git push
+  344  git push sensor_Actions.py 
+  345  git log
+  346  git checkout
+  347  git add .
+  348  git add sensor_Actions.py 
+  349  git commit -m "akcii Drobaha"
+  350  git push origin main
+  351  git push origin origin/main
+  352  git log
+  353  ls
+  354  git checkout
+  355  git add sensor_Actions.py 
+  356  git commit -m "sensor akcii - Ivan" 
+  357  git push origin origin/main
+  358  ls
+  359  git config --list
+  360  git add sensor_Actions.py 
+  361  git commit -m "sensor akcii - Ivan" 
+  362  git push origin 
+  363  git push origin main
+  364  git add sensor_Actions.py 
+  365  git commit -m "sensor akcii - Ivan" 
+  366  git push origin main
+  367  git status
+  368  git log
+  369  git status
+  370  ls
+  371  git add sensor_Actions.py 
+  372  git commit "додавання файлу сенсора акций"
+  373  git commit -m "додавання файлу сенсора акций"
+  374  git push origin main
+  375  git config --global "drobaSZ"
+  376  git config --global user.name "drobaSZ"
+  377  git config --global email "droba_sz25@student.itstep.org"
+  378  git config --global user.email "droba_sz25@student.itstep.org"
+  379  ls
+  380  git clone git@github.com:m-sekret/MB311-Exchange.git
+  381  git add sensor_Actions.py 
+  382  git commit -m "dodav sensor akcii"
+  383  git add sensor_Actions.py 
+  384  git commit -m "sensor akcii"
+  385  git push origin main
+  386  git status
+  387  ls
+  388  cd M
+  389  cd MB311-Exchange/
+  390  ls
+  391  cp /home/student/MB311-Exchange/sensor_Actions.py  /home/student/MB311-Exchange/MB311-Exchange/sensor_Action.py 
+  392  ld
+  393  ls
+  394  cat sensor_Action.py 
+  395  git add sensor_Action.py 
+  396  git commit -m "dodav akcii"
+  397  git push origin main
+  398  git status
+  399  cd ..
+  400  ls
+  401  cd ..
+  402  ls
+  403  ll
+  404  cd M
+  405  cd MB311-Exchange/
+  406  ll
+  407  cp sensor_Actions.py /home/student/
+  408  cd ..
+  409  ll
+  410  rm -rf MB311-Exchange/
+  411  ll
+  412  git clone git@github.com:m-sekret/MB311-Exchange.git
+  413  ll
+  414  cp sensor_Actions.py /home/student/MB311-Exchange/
+  415  cd MB311-Exchange/
+  416  ll
+  417  git add sensor_Actions.py 
+  418  git commit -m "dodav "
+  419  git push origin main
+  420  git status
+  421  git log
+  422  ll
+  423  python3 -m venv venv
+  424  source venv/bin/activate
+  425  pip install flask
+  426  pip show flask
+  427  pip3 install python3 python3-pip -y
+  428  pip install Flask
+  429  pip install requests
+  430  ip a
+  431  apt install python3-venv -y
+  432  python3 -m venv venv
+  433  sourquite
+  434  exit
+  435  reboot
+  436  ll
+  437  cd MB311-Exchange/
+  438  ll
+  439  ll /var/
+  440  cd venv/
+  441  ll
+  442  cd ..
+  443  ll
+  444  apt install python3-venv -y
+  445  python3 -m venv venv
+  446  source venv/bin/activate
+  447  pip install flask
+  448  pip show flask
+  449  apt install python3 python3-pip -y
+  450  pip install Flask
+  451  pip install requests
+  452  exit
+  453  student
+  454  shutdown
+  455  shutdown -c
+  456  shutdown now
+  457  clear
+  458  ls
+  459  cd ..
+  460  ls
+  461  cd devasc/
+  462  ls
+  463  ls labs/
+  464  ls labs/devnet-src/
+  465  ls Downloads/
+  466  cd
+  467  ls
+  468  cd snap/
+  469  ls
+  470  cd /home/
+  471  ls
+  472  ls student/
+  473  ls
+  474  cd student/
+  475  ols
+  476  ls
+  477  git config --global user.name "drobaSZ"
+  478  git config --global user.email "droba_sz25@student.itstep.org"
+  479  git config --list
+  480  ls
+  481  cd ..
+  482  ls
+  483  cd devasc/
+  484  ls
+  485  cd labs/
+  486  ls
+  487  cd devnet-src/
+  488  ls
+  489  cd git-intro/
+  490  ls
+  491  cd /home/student/
+  492  ls
+  493  mkdir homeGIT
+  494  ls
+  495  cd homeGIT/
+  496  clear
+  497  git status
+  498  ls
+  499  git clone git@github.com:drobaSZ/testrepo.git
+  500  ls
+  501  ls testrepo/
+  502  git init
+  503  cd testrepo/
+  504  ls
+  505  history>history.txt
